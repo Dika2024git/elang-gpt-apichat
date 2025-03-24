@@ -3,7 +3,6 @@
   "version": "1.5.0",
   "description": "Elang GPT - AI Text Generation dengan Bahasa Indonesia & Gaul",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
