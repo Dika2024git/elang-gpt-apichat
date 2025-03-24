@@ -2,11 +2,11 @@
   "name": "elang-gpt-api",
   "version": "1.5.0",
   "description": "Elang GPT - AI Text Generation dengan Bahasa Indonesia & Gaul",
-  "main": "index.js",
+  "main": "index.cjs",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.cjs",
+    "dev": "nodemon index.cjs"
   },
   "dependencies": {
     "express": "^4.18.2",
