@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { pipeline } = require("@xenova/transformers");
+import { pipeline } from "@xenova/transformers";
 
 const app = express();
 app.use(cors());
