@@ -6,15 +6,6 @@ app.use(express.json());
 
 app.get("/chat", (req, res) => {
     const text = req.query.text;
-    const apikey = req.query.apikey
-    
-    // 🔹 Validasi API Key (harus ada dalam daftar API_KEYS)
-    if (!apikey) {
-        return res.status(403).json({
-            status: "error",
-            message: "Akses ditolak! API Key tidak valid."
-        });
-    }
     
     // 🔹 Validasi input text
     if (!text || text.trim() === "") {
