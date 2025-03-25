@@ -1,20 +1,15 @@
 const express = require("express");
 const { exec } = require("child_process");
-const fs = require("fs");
 
 const app = express();
 app.use(express.json());
-
-// 🔹 Baca API Key dari file JSON
-const config = JSON.parse(fs.readFileSync("config.json", "utf8"));
-const API_KEYS = config.API_KEYS;
 
 app.get("/chat", (req, res) => {
     const text = req.query.text;
     const apikey = req.query.apikey
     
     // 🔹 Validasi API Key (harus ada dalam daftar API_KEYS)
-    if (!apikey || !API_KEYS.includes(apikey)) {
+    if (!apikey) {
         return res.status(403).json({
             status: "error",
             message: "Akses ditolak! API Key tidak valid."
