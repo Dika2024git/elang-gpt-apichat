@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Key Elang GPT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API KEY</h1>
+        <h2>ELANG GPT</h2>
+        <p id="teksbagus">Secure & Fast API Keys! And API Key System Ready!</p>
+
+        <b>MASUK KE WEBSITE API:</b>
+
+        <button onclick="window.location.href='/chat?text=halo'" class="blue-large-btn">Pergi</button>
+    </div>
+
+    <!-- Peringatan CSS -->
+    <div id="notification" class="notification"></div>
+
+    <script>
+      // Fungsi untuk Menampilkan Peringatan CSS
+function showNotification(message) {
+    let notification = document.getElementById("notification");
+    notification.innerText = message;
+    notification.classList.add("show");
+
+    // Hilang otomatis setelah 3 detik
+    setTimeout(() => {
+        notification.classList.remove("show");
+    }, 3000);
+}
+    </script>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.blue-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.orange-btn {
+  width: 100%;
+    background-color: orange;
+    color: white;
+}
+
+.cyan-btn {
+    background-color: #00e5ff;
+    color: white;
+    width: 100%;
+}
+
+.blue-large-btn {
+    background-color: #0056ff;
+    color: white;
+    width: 100%;
+}
+
+/* Notifikasi */
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Animasi Tampil Notifikasi */
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+}
+    </style>
+</body>
+</html>

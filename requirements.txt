@@ -1,0 +1,5 @@
+python
+flask
+gunicorn
+transformers
+torch

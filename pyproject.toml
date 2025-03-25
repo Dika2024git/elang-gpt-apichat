@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "elang-gpt-apipython"
+version = "1.0.0"
+description = "Model AI bahasa gaul dengan Transformers"
+authors = ["Elang GPT Developer"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "^2.2.0"
+transformers = "^4.39.3"
+flask = "^3.0.0"
+gunicorn = "^21.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
