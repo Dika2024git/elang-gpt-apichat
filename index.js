@@ -17,7 +17,7 @@ app.get("/chat", (req, res) => {
         });
     }
 
-    exec(`python model.py "${text}"`, (error, stdout, stderr) => {
+    exec(`python3 model.py "${text}"`, (error, stdout, stderr) => {
         if (error) {
             return res.status(500).json({
                 status: "error",
